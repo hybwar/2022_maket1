@@ -1,0 +1,529 @@
+/* Общие классы и настройки */
+
+/* Настройки блочных элементов */
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+a {
+    text-decoration:none;
+}
+
+.block{
+    padding: 120px 98px;
+    overflow:hidden;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.block270, .block270-cnt{
+    display:block;
+    width: 270px;
+    height: 270px;
+}
+
+.block270-cnt{
+    padding: 61px 32px 68px;
+    border: 1px solid #9c9c9c;
+    background-color: #ffffff;
+    opacity: 0.9;
+    text-align:center;
+    box-sizing: border-box;
+}
+
+.block370{
+    display:block;
+    width: 370px;
+    height: 370px;
+}
+
+.block683{
+    position:relative;
+    width: 683px;
+    height: 683px;
+    padding-top:228px;
+    padding-left:50px;
+    box-sizing:border-box;
+}
+
+.block570{
+    position:relative;
+    display:block;
+    width: 570px;
+    height: 570px;
+    padding-top: 186px;
+    padding-left: 30px;
+    box-sizing: border-box;
+}
+
+.clearfix:after{
+    content:"";
+    display:table;
+    clear:both;
+}
+
+.right{
+    float:right;
+}
+.left{
+    float:left;
+}
+
+.container{
+    width: 1366px;
+    margin: 0px auto;
+    position:relative;
+}
+
+.slider{
+    height: 800px;
+}
+
+.back{
+    position:absolute;
+    top: 0px;
+    left: 0px;
+    z-index:-1;
+}
+/* Настройки текстовых элементов */
+
+.caption62{
+    color: #212121;
+    font-size: 62px;
+    font-weight: 100;
+    letter-spacing: -3.9px;
+    text-transform: uppercase;
+}
+.caption36{
+    color: #212121;
+    font-size: 36px;
+    font-weight: 700;
+    letter-spacing:-1px;
+    text-transform:capitalize;
+    margin-top: 7px;
+}
+
+.caption22{
+    color: #212121;
+    font-size: 22px;
+    font-weight: 700;
+    margin-top: 15px;
+}
+
+.title18{
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-top: -4px;
+}
+
+.title14{
+    color: #212121;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 26px;
+    text-transform: uppercase;
+    letter-spacing: 0.3px;
+}
+.title12{
+    color: #6c6c6c;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 26px;
+    text-transform: uppercase;
+    letter-spacing: 0.6px;
+}
+
+.green{
+    color: #43a047;
+}
+
+.blue{
+    color: #1e88e5;
+}
+
+.red{
+    color: #e53935;
+}
+.grey{
+    color: #6c6c6c;
+}
+
+.content14{
+    color: #6c6c6c;
+    font-size: 14px;
+    font-weight: 300;
+    text-align:justify;
+    letter-spacing:-0.5px;
+    overflow:hidden;
+    line-height:24px;
+    max-height: 48px;
+
+}
+.content22{
+    color: #6c6c6c;
+    font-size: 22px;
+    font-weight: 300;
+}
+
+/* Настрока кнопок */
+
+/* Шрифт кнопок */
+.btn, .btn48, .btn-long{
+    display: block;
+    color: #212121;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 3.6px;
+    text-decoration:none;
+    line-height:45px
+
+}
+/* Размер кнопок */
+.btn{
+    padding-top: 3px;
+}
+.btn48{
+    /* Настройка формы кнопки */
+    display:inline-block;
+    box-sizing: border-box;
+    padding-top: 5px;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+}
+.btn-long{
+    width: 212px;
+    height: 45px;
+    border-radius: 23px;
+}
+
+/* Настройка тени */
+.btn48, .btn-long{
+    box-shadow: 0 2px 5px 1px rgba(33, 33, 33, 0.35);
+    background-color: #ffffff;
+    text-align: center;
+}
+/* Настройка стрелики кнопки */
+.btn-long:after{
+    content:url(img/arrow12.svg);
+    padding-left: 22px;
+}
+.btn:after{
+    content:url(img/arrow12.svg);
+    padding-left: 12px;
+}
+.btn48:after{
+    content:url(img/arrow20.svg);
+    padding-left: 1px;
+}
+
+/* Настроки нажатия кнопки */
+.btn48:active, .btn-long:active{
+    box-shadow:none;
+}
+/* КОНЕЦ Настрока кнопок */
+
+/* Настройки меню */
+.menu-list {
+    list-style-type: none;
+    float:left;
+}
+
+.menu-link{
+    display:inline-block;
+    color: #8c8c8c;
+    font-size: 14px;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 1.4px;
+    text-decoration: none;
+    padding: 0px 13px 6px;
+}
+.menu-link:hover{
+    color: #212121;
+}
+
+.menu-link-active {
+    color: #212121;
+    font-weight: 700;
+    border-bottom: 3px solid #212121;
+}
+
+.search-btn{
+    display: inline-block;
+    width: 23px;
+    height: 23px;
+    background-image: url(img/search.svg);
+}
+
+/* КОНЕЦ Настройки меню */
+
+/* Настройки  navigation */
+.navigation{
+    position:absolute;
+    bottom: 19px;
+    width:1170px;
+    text-align: center;
+    font-size: 0px;
+}
+.circle{
+    background-color: #c7c7c7;
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    border-radius:50%;
+    margin: 5px;
+}
+
+.circle:hover{
+    background-color: #212121;
+}
+
+.circle-active {
+    width: 40px;
+    height: 40px;
+    background-color: #212121;
+    margin-bottom: 0px;
+}
+/* КОНЕЦ Настройки  navigation */
+
+/* Настройки вкладок */
+.tab-control{
+    margin-top: -15px;
+}
+
+.tab-item{
+    float:left;
+    list-style-type:none;
+}
+
+.tab-link{
+    display:block;
+    color: #6c6c6c;
+    text-decoration:none;
+    letter-spacing:0px;
+    padding: 0px 20px 12px 9px;
+    border-bottom: 1px solid #6c6c6c;
+}
+
+.tab-link:hover{
+    color: #212121;
+}
+
+.tab-link-active{
+    color: #212121;
+    padding: 0px 20px 10px 9px;
+    border-bottom: 3px solid #212121;
+}
+/* КОНЕЦ Настройки вкладок */
+
+/* Настройка списка товаров */
+.product-list{
+    overflow: hidden;
+    margin-top: -30px;
+    margin-left: -30px;
+}
+
+.product-item{
+    list-style-type:none;
+    float:left;
+    position:relative;
+    padding-top: 30px;
+    padding-left: 30px;
+}
+
+.product-item-hover{
+    display:none;
+    top: 30px;
+    position:absolute;
+}
+
+.product-item:hover .product-item-hover{
+    display:block;
+}
+/* КОНЕЦ Настройка списка товаров */
+
+/* настроки индивидуальные */
+#slider1-body{
+    padding-top: 253px;
+}
+
+#slider2-body{
+    padding-top: 167px;
+}
+
+.slider .content14{
+    width: 458px;
+    padding-top: 11px;
+    padding-bottom: 28px;
+}
+
+.block683 .content14{
+    width: 374px;
+    padding-top: 8px;
+    padding-bottom: 30px;
+}
+
+.block570 .content14{
+    width: 332px;
+    padding-top: 8px;
+    padding-bottom: 30px;
+}
+
+.block270-cnt .content14{
+    padding-top: 10px;
+    text-align: center;
+}
+
+#featured-list{
+    margin-top: 20px;
+}
+
+#trending-header .caption36{
+    padding-top: 0px;
+    margin-top: -5px;
+}
+
+#trending-header{
+    margin-bottom: 53px;
+    margin-top: -1px;
+}
+
+/* Настройки header */
+header{
+    width: 1170px;
+    position:absolute;
+    top: 0px;
+    z-index:1;
+    padding: 63px 98px 0px;
+}
+
+/* Настройки блока mobile */
+#mobile{
+    padding-top: 125px;
+    background-image: url(img/phone_bg.jpg);
+    height: 516px;
+}
+
+#mobile .caption62{
+    width: 410px;
+}
+#mobile .content22{
+    padding-top: 6px;
+    padding-bottom: 31px;
+}
+
+.store{
+    margin-right: 10px;
+}
+
+/* КОНЕЦ Mobile */
+
+/* Настройки footer */
+footer {
+    background-color: #f7f7f7;
+    padding: 120px 98px 30px 98px;
+}
+#contact-block, #useful-block, #subscribe-block{
+    height: 206px;
+}
+
+#contact-block{
+    width: 270px;
+    padding-right: 30px;
+}
+#useful-block{
+    width: 470px;
+    padding-right: 30px;
+}
+
+#subscribe-block{
+    width: 370px;
+}
+
+footer .content14{
+    color: #212121;
+    line-height:22px;
+    padding-top: 24px;
+    padding-bottom: 26px;
+    max-height: 170px;
+}
+
+.tel-link{
+    color: #212121;
+}
+.tel-link:hover{
+    color: #6c6c6c;
+}
+
+.useful-list{
+    overflow: hidden;
+    padding-top: 24px;
+}
+
+.useful-item{
+    list-style-type:none;
+    float:left;
+    width:235px;
+}
+.useful-item:hover .title14{
+    color: #6c6c6c;
+}
+
+#subscribe-form{
+    position:relative
+}
+
+#subscribe{
+    width: 370px;
+    height: 0px;
+    padding: 24px 36px 24px 19px;
+    border: 1px solid #d9dee1;
+    box-sizing:border-box;
+    background-color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#submit{
+    position:absolute;
+    top: 0px;
+    right: 0px;
+    width: 20px;
+    height: 20px;
+    padding: 14px;
+    padding-left: 0px;
+}
+#submit:focus{
+    outline:none;
+}
+
+#footer-bottom{
+    overflow:hidden;
+}
+
+#footer-bottom .title12{
+    width: 400px;
+}
+#footer-bottom .title12.right{
+    text-align: right;
+}
+#footer-bottom .title12.right:hover{
+    color: #212121;
+}
+.social{
+    width:370px;
+    text-align: center;
+}
+.social-img{
+    width: 28px;
+}
+/* КОНЕЦ Настройки footer */
+
+
